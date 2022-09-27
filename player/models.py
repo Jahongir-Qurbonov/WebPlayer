@@ -10,4 +10,4 @@ class Song(models.Model):
     audio_file = models.FileField(upload_to='audio_files/')
 
     def __str__(self):
-        return str(self.audio_file)
+        return str(f"{self.audio_file}")
